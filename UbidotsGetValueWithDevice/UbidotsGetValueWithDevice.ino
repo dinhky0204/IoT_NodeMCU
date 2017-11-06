@@ -1,4 +1,4 @@
-#include "UbidotsMicroESP8266.h"  //import ubiots library
+#include "ConnectServer.h"  //import ubiots library
 #include <DHT.h>
 
 #define DHTPIN D4

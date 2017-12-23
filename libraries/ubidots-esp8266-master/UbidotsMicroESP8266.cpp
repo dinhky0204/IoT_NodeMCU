@@ -265,7 +265,7 @@ float Ubidots::getValueUDP(char* id){
 
     int timeout = 0;
 
-    while(!_client.available() && timeout < 5000) {
+    while(!_client.available() && timeout < 2000) {
         timeout++;
         delay(1);
     }
@@ -313,7 +313,7 @@ float Ubidots::getValueWithDevice(char* dsLabel, char* varLabel){
 
     int timeout = 0;
 
-    while(!_client.available() && timeout < 5000) {
+    while(!_client.available() && timeout < 500) {
         timeout++;
         delay(1);
     }
